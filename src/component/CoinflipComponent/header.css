@@ -1,0 +1,7 @@
+.bg-body{
+    background-image: url(/src/assets/coinflip/purplebg.png);
+   
+    height: 91.5vh;
+    background-size: cover;
+    position: relative;
+}

@@ -1,0 +1,99 @@
+
+.coin {
+  /* top: 8rem; */
+  -webkit-transform: rotateX(45deg);
+          transform: rotateX(45deg);
+  position: relative;
+  width: 6rem;
+  height: 6rem;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  border-radius: 100%;
+}
+.animate {
+  -webkit-animation: spin 1.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+          animation: spin 1.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+.tail {
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  background-image: url(/src/assets/coinflip/tail.png);
+  background-size: contain;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.head{
+  position: absolute;
+  width: 6rem;
+  height: 6rem;
+  background-image: url(/src/assets/coinflip/head.png);
+  background-size: contain;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.tail {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+button {
+  background: #607d8b;
+  color: white;
+  padding: 0.5rem;
+  width: 9rem;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-box-shadow: 3px 3px 10px #00000052;
+          box-shadow: 3px 3px 10px #00000052;
+  -webkit-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+button:active {
+  background: #869ca7;
+}
+button:disabled {
+  background: #9e9e9e;
+  cursor: not-allowed;
+}
+@-webkit-keyframes spin {
+  0% {
+    bottom:  0rem;
+    -webkit-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+  }
+  50% {
+    -webkit-transform: rotateX(5000deg);
+            transform: rotateX(5000deg);
+    bottom: 8rem;
+  }
+  100% {
+    bottom:  0rem;
+    -webkit-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+  }
+}
+@keyframes spin {
+  0% {
+    bottom:  0rem;
+    -webkit-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+  }
+  50% {
+    -webkit-transform: rotateX(5000deg);
+            transform: rotateX(5000deg);
+    bottom: 8rem;
+  }
+  100% {
+    bottom:  0rem;
+    -webkit-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+  }
+}

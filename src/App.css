@@ -1,0 +1,28 @@
+#root {
+  max-width: 100%;
+  
+}
+body{
+  width: 100%;
+    margin: 0;
+    padding: 0;
+    /* display: -webkit-box; */
+}
+
+.banner img{
+  width: 100%;
+  height: 10rem;
+  }
+
+  .slick-slider{
+    overflow: hidden;
+  }
+
+.tab-container img{
+  width: 100%;
+}
+
+.memberslider{
+  display: flex !important;
+}
+
