@@ -8,7 +8,7 @@ import banner3 from "./assets/Banners/banner3.jpg";
 import Navbar from "./component/Navbar";
 import Tabs from "./component/Tabs";
 import MemberSlider from "./component/MemberSlider";
-// import Footer from "./component/Footer";
+import Footer from "./component/Footer";
 
 function Home() {
   const banners = {
@@ -37,6 +37,8 @@ function Home() {
       </Slider>
       <Tabs />
       <MemberSlider />
+      <Footer />
+
     </>
   );
 }

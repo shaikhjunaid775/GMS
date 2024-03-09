@@ -12,7 +12,7 @@ function Tabs() {
   const [openTab, setOpenTab] = useState(1);
   return (
     <>
-      <div className="container mx-auto mt-3">
+      <div className=" mx-auto mt-3">
         <div className="flex flex-col items-center justify-center maxW-xl">
           <div>
             <div className="grid grid-cols-4 ">
