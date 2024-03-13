@@ -1,6 +1,7 @@
 {
   "name": "gamedemo",
   "private": false,
+  "homepage": "https://shaikhjunaid775.github.io/GMS/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
